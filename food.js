@@ -33,20 +33,20 @@ function showDogData(dogData){
 
       for(var i = 0; i < dogBrands.length; i++){
 
-        dogFoodData += `<div><h1>${dogBrands[i].name}</h1></div>`
+        dogFoodData += `<div id="wow"><h1>${dogBrands[i].name}</h1></div>`
 
         var types = dogBrands[i].types;
 
       for(var j = 0; j < types.length; j++){
 
-        dogFoodData += `<h3>Type: ${types[j].type}</h3>`
+        dogFoodData += `<div id="wow"><h3>Type: ${types[j].type}</h3></div>`
 
         var volumes = types[j].volumes;
 
       for(var k = 0; k < volumes.length; k++){
 
-        dogFoodData += `<p>Volume: ${volumes[k].name}</p>`
-        dogFoodData += `<p>Price: ${volumes[k].price}</p>`
+        dogFoodData += `<div id="wow"><p>Volume: ${volumes[k].name}</p></div>`
+        dogFoodData += `<div id="wow"><p>Price: ${volumes[k].price}</p></div>`
       }
     }
   }
@@ -84,21 +84,21 @@ function showCatData(catData){
   // console.log("catBrands", catBrands);
       for(var a = 0; a < catBrands.length; a++){
 
-        catfoodData += `<div><h1>${catBrands[a].name}</h1></div>`
-        catfoodData += `<h2>${catBrands[a].breeds}</h2>`
+        catfoodData += `<div id="wow"><h1>${catBrands[a].name}</h1></div>`
+        catfoodData += `<div id="wow"><h2>${catBrands[a].breeds}</h2></div>`
         // console.log("catfoodData", catfoodData);
         var catTypes = catBrands[a].types;
 
       for(var b = 0; b < catTypes.length; b++){
 
-        catfoodData += `<h3>Type: ${catTypes[b].type}</h3>`
+        catfoodData += `<div id="wow"><h3>Type: ${catTypes[b].type}</h3></div>`
 
         var catVolumes = catTypes[b].volumes;
 
       for(var c = 0; c < catVolumes.length; c++){
 
-        catfoodData += `<p>Volume: ${catVolumes[c].name}</p>`
-        catfoodData += `<p>Price: ${catVolumes[c].price}</p>`
+        catfoodData += `<div id="wow"><p>Volume: ${catVolumes[c].name}</p></div>`
+        catfoodData += `<div id="wow"><p>Price: ${catVolumes[c].price}</p></div>`
       }
     }
   }
